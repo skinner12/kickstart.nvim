@@ -636,6 +636,7 @@ require('lazy').setup({
         javascriptreact = { { 'prettierd', 'prettier' } },
         typescriptreact = { { 'prettierd', 'prettier' } },
         toml = { { 'prettierd', 'prettier' } },
+        sh = { { 'beautysh' } },
       },
     },
   },
