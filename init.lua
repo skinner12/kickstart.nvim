@@ -787,7 +787,7 @@ require('lazy').setup({
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+    -- priority = 1000, -- Make sure to load this before all the other start plugins.
     -- init = function()
     --   -- Load the colorscheme here.
     --   -- Like many other themes, this one has different styles, and you could load
@@ -821,10 +821,10 @@ require('lazy').setup({
         return {}
       end,
       theme = 'wave', -- Load "wave" theme when 'background' option is not set
-      -- background = { -- map the value of 'background' option to a theme
-      --   dark = 'wave', -- try "dragon" !
-      --   light = 'lotus',
-      -- },
+      background = { -- map the value of 'background' option to a theme
+        dark = 'dragon', -- try "dragon" !
+        light = 'lotus',
+      },
     },
     init = function()
       -- Load the colorscheme here.
@@ -839,8 +839,8 @@ require('lazy').setup({
   { 'ellisonleao/gruvbox.nvim', priority = 1000, config = true },
   {
     'craftzdog/solarized-osaka.nvim',
-    lazy = false,
-    priority = 1000,
+    -- lazy = false,
+    -- priority = 1000,
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
