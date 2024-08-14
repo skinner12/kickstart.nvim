@@ -28,7 +28,7 @@ return {
   vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, {}), -- File Explorer
   vim.keymap.set('n', '<C-p>', require('telescope.builtin').git_files, {}),
 
-  vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle),
+  -- vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle),
 
   -- ThePrimeagen
   vim.keymap.set('x', '<leader>p', '"_dp'), -- paste and replace and let the word into buffer
