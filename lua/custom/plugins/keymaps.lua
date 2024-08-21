@@ -29,6 +29,12 @@ return {
   vim.keymap.set('n', '<C-p>', require('telescope.builtin').git_files, {}),
 
   -- vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle),
+  -- Mappa leader+s+p per cercare file ignorati da git
+  vim.keymap.set('n', '<leader>sp', function()
+    require('telescope.builtin').find_files {
+      find_command = { 'rg', '--files', '--hidden', '--no-ignore', '--glob', '!.git' },
+    }
+  end, { desc = '[F]ind File in [P]rogect' }),
 
   -- ThePrimeagen
   vim.keymap.set('x', '<leader>p', '"_dp'), -- paste and replace and let the word into buffer
