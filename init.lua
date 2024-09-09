@@ -616,7 +616,7 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         taplo = {},
-        tsserver = {},
+        ts_ls = {},
         --
 
         lua_ls = {
