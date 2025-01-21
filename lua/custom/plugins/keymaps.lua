@@ -9,6 +9,10 @@ return {
   -- Delete a word backwards
   vim.keymap.set('n', 'dw', 'vb"_d'),
 
+  -- Quick fix
+  vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>'),
+  vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>'),
+
   -- Move text up and down
   vim.keymap.set('v', '<A-j>', ':m .+1<CR>=='),
   vim.keymap.set('v', '<A-k>', ':m .-2<CR>=='),
