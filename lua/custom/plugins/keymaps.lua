@@ -12,6 +12,8 @@ return {
   -- Quick fix
   vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>'),
   vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>'),
+  vim.keymap.set('n', '<M-c>', '<cmd>cclose<CR>'),
+  vim.keymap.set('n', '<M-o>', '<cmd>copen<CR>'),
 
   -- Move text up and down
   vim.keymap.set('v', '<A-j>', ':m .+1<CR>=='),
