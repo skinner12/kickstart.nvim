@@ -59,4 +59,7 @@ return {
     -- require("vim.lsp.buf").format({ timeout_ms = 2000 })
     vim.lsp.buf.format { timeout_ms = 2000 }
   end, { desc = 'Format code' }),
+
+  -- rust
+  vim.keymap.set('n', '<leader>cr', vim.lsp.buf.code_action, { desc = 'Crates: Code Action' }),
 }
